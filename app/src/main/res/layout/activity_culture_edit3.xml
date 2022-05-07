@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a8b4cb"
+    tools:context=".MainActivity_culture_edit3">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline106"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <EditText
+        android:id="@+id/editText_select_trip"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="장소입력"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/guideline107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/spinner_select_dis3_trip"
+        app:layout_constraintTop_toTopOf="@+id/guideline106"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <EditText
+        android:id="@+id/txt_culture_review3_title2"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="입 력"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline105"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review3_4"
+        app:layout_constraintTop_toTopOf="@+id/guideline104"
+        app:layout_constraintVertical_bias="1.0"></EditText>
+
+    <TextView
+        android:id="@+id/txt_culture_review3_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/fontstylekor"
+        android:text="제목:"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline104" />
+
+    <TextView
+        android:id="@+id/txt_culture_review3_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/fontstylekor"
+        android:text="날씨:"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline105" />
+
+    <Spinner
+        android:id="@+id/spinner_culture_review3_author2"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/spinner_back"
+        android:entries="@array/weather"
+        app:layout_constraintBottom_toTopOf="@+id/guideline106"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review3_5"
+        app:layout_constraintTop_toBottomOf="@+id/txt_culture_review3_title2" />
+
+    <Spinner
+        android:id="@+id/spinner_select_dis3_trip"
+        android:layout_width="59dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/spinner_back"
+        android:entries="@array/county1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline107"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review3_3"
+        app:layout_constraintTop_toTopOf="@+id/guideline106" />
+
+    <TextView
+        android:id="@+id/txt_culture_review3_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/fontstylekor"
+        android:text="지역:"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline106" />
+
+    <ImageView
+        android:id="@+id/img_culture_review"
+        android:layout_width="137dp"
+        android:layout_height="114dp"
+
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo3" />
+
+    <TextView
+        android:id="@+id/txt_culture_review3_date2"
+        android:layout_width="171dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/fontstylekor"
+        android:text="xxxx-xx-xx"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline104"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <Button
+        android:id="@+id/btn_culture_review3_save2"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="#4374D9"
+        android:text="저 장"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline108"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <EditText
+        android:id="@+id/txt_culture_review3_content2"
+        android:layout_width="370dp"
+        android:layout_height="273dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="내 용"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline108"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline107"></EditText>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

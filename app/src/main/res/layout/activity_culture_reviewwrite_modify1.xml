@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a8b4cb"
+    tools:context=".MainActivity_culture_reviewwrite_modify1">
+
+    <TextView
+        android:id="@+id/txt_culture_review1_day"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:gravity="end"
+        android:text="일"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline121"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_month"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <TextView
+        android:id="@+id/txt_culture_review1_year"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:gravity="end"
+        android:text="년"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    <TextView
+        android:id="@+id/txt_culture_review1_month"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="end"
+        android:text="월"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline121"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_year"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    <EditText
+        android:id="@+id/txt_culture_reviewmo1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="입 력"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline122"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_1"
+        app:layout_constraintTop_toTopOf="@+id/guideline121" />
+
+    <TextView
+        android:id="@+id/txt_culture_review1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/fontstylekor"
+        android:padding="10dp"
+        android:text=" 제 목 : "
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline121" />
+
+    <TextView
+        android:id="@+id/txt_culture_review1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/fontstylekor"
+        android:padding="10dp"
+        android:text="감독 및 배우"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline122" />
+
+    <EditText
+        android:id="@+id/txt_culture_reviewmo1_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="입 력"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline123"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_2"
+        app:layout_constraintTop_toTopOf="@+id/guideline122" />
+
+    <Button
+        android:id="@+id/btn_culture_reviewmo1_genre"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="18dp"
+        android:background="#4374D9"
+        android:fontFamily="@font/fontstylekor"
+        android:padding="10dp"
+        android:text="선택"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline124"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_reviewmo1_genre"
+        app:layout_constraintTop_toTopOf="@+id/guideline123"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/txt_culture_reviewmo1_genre"
+        android:layout_width="151dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="40dp"
+        android:hint="  장  르  "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline124"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_3"
+        app:layout_constraintTop_toTopOf="@+id/guideline123"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/txt_culture_review1_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/fontstylekor"
+        android:padding="10dp"
+        android:text=" 장 르 : "
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline123"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <EditText
+        android:id="@+id/txt_culture_reviewmo1_content"
+        android:layout_width="370dp"
+        android:layout_height="273dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="내 용"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline125"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline124" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline122"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline124"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline125"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <ImageView
+        android:id="@+id/img_culture_review1"
+        android:layout_width="137dp"
+        android:layout_height="117dp"
+        android:background="@drawable/logo3"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_culture_reviewmo1_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:text="취소"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_culture_reviewmo1_update"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <Button
+        android:id="@+id/btn_culture_reviewmo1_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="36dp"
+        android:layout_weight="1"
+        android:background="#4374D9"
+        android:text="수정"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_culture_reviewmo1_delete"
+        app:layout_constraintTop_toTopOf="@+id/guideline125" />
+
+    <Button
+        android:id="@+id/btn_culture_reviewmo1_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_weight="1"
+        android:background="@android:color/background_light"
+        android:text="삭 제"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_culture_review1"
+        app:layout_constraintTop_toTopOf="@+id/guideline125"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+    app:layout_constraintBottom_toTopOf="@+id/txt_culture_reviewmo1_title"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_month"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0" />
+
+    app:layout_constraintBottom_toTopOf="@+id/txt_culture_reviewmo1_title"
+    app:layout_constraintEnd_toStartOf="@+id/txt_culture_review1_day"
+    app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_year"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+    android:id="@+id/txt_culture_review1_1"
+    android:layout_width="92dp"
+    android:layout_height="46dp"
+    android:layout_marginStart="44dp"
+    android:layout_marginTop="160dp"
+    android:layout_marginEnd="116dp"
+    android:layout_marginBottom="101dp"
+    android:fontFamily="@font/fontstylekor"
+    android:text="제목:"
+    android:textColor="@android:color/black"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/btn_main_calorie"
+    app:layout_constraintEnd_toStartOf="@+id/btn_edit"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+    android:id="@+id/txt_culture_review1_2"
+    android:layout_width="155dp"
+    android:layout_height="38dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="228dp"
+    android:layout_marginEnd="116dp"
+    android:layout_marginBottom="101dp"
+    android:fontFamily="@font/fontstylekor"
+    android:text="감독 및 배우:"
+    android:textColor="@android:color/black"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/btn_main_calorie"
+    app:layout_constraintEnd_toStartOf="@+id/btn_edit"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+    android:id="@+id/txt_culture_review1_3"
+    android:layout_width="79dp"
+    android:layout_height="45dp"
+    android:layout_marginStart="44dp"
+    android:layout_marginTop="288dp"
+    android:layout_marginEnd="116dp"
+    android:layout_marginBottom="101dp"
+    android:fontFamily="@font/fontstylekor"
+    android:text="장르:"
+    android:textColor="@android:color/black"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/btn_main_calorie"
+    app:layout_constraintEnd_toStartOf="@+id/btn_edit"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+    app:layout_constraintBottom_toTopOf="@+id/btn_main_calorie"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+    android:id="@+id/btn_culture_reviewmo1_cancle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="605dp"
+    android:layout_marginEnd="4dp"
+    android:background="@android:color/background_light"
+    android:text="취 소"
+    android:textColor="@android:color/black"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+    android:id="@+id/txt_culture_reviewmo1_content"
+    android:layout_width="342dp"
+    android:layout_height="230dp"
+    android:layout_marginStart="44dp"
+    android:layout_weight="1"
+    android:ems="10"
+    android:hint="내 용"
+    android:inputType="textMultiLine"
+    android:textAlignment="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.694"></EditText>
+
+    <EditText
+    android:id="@+id/txt_culture_reviewmo1_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="60dp"
+    android:layout_weight="1"
+    android:ems="10"
+    android:hint="입 력"
+    android:inputType="text"
+    android:textAlignment="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.216"></EditText>
+
+    <EditText
+    android:id="@+id/txt_culture_reviewmo1_author"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="36dp"
+    android:layout_weight="1"
+    android:ems="10"
+    android:hint="입 력"
+    android:inputType="text"
+    android:textAlignment="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txt_culture_reviewmo1_title"
+    app:layout_constraintVertical_bias="0.033"></EditText>
+
+    <ImageView
+    android:id="@+id/img_culture_review1"
+    android:layout_width="0dp"
+    android:layout_height="125dp"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="166dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/btn_culture_reviewmo1_cancle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.996"
+    app:srcCompat="@drawable/logo3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    -->

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CalorieCulture</string>
+    <string-array name = "choice">
+        <item>"삭제"</item>
+        <item>"수정"</item>
+    </string-array>
+</resources>

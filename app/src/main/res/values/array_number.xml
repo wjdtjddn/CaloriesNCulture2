@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="number_Phone">
+        <item>010</item>
+        <item>016</item>
+        <item>017</item>
+        <item>02</item>
+        <item>031</item>
+        <item>033</item>
+        <item>042</item>
+    </string-array>
+</resources>

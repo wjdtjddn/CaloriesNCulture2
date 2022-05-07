@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a8b4cb"
+    tools:context=".MainActivity_cal_searchplusd">
+
+    <EditText
+        android:id="@+id/txt_calsearchplus5"
+        android:layout_width="239dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="입력하세요"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_calsearchplus_foonamed2" />
+
+    <Spinner
+        android:id="@+id/spinner_calsearchplus5"
+        android:layout_width="131dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/kcal"
+        app:layout_constraintBottom_toTopOf="@+id/txt_calsearchplus_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_calsearchplus5"
+        app:layout_constraintTop_toBottomOf="@+id/txt_calsearchplus_foonamed2"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <TextView
+        android:id="@+id/txt_calsearchplus_foonamed2"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="101dp"
+        android:fontFamily="@font/fontstylekor"
+        android:text="음식이름"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_main_calorie"
+        app:layout_constraintEnd_toStartOf="@+id/btn_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_calsearchplusd_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="@font/fontstylekor"
+        android:text="Kcal"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_edit"
+        app:layout_constraintStart_toEndOf="@+id/txt_calsearchplusd_kcal2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_calsearchplus5" />
+
+    <TextView
+        android:id="@+id/txt_calsearchplusd_kcal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/fontstylekor"
+        android:text="1234"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_calsearchplus5" />
+
+
+    <Button
+        android:id="@+id/btn_calsearchplusd_save2"
+        android:layout_width="119dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:text="save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_calsearchplus5" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart_searchplusd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_calsearchplusd_4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

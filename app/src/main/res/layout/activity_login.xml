@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a8b4cb"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_login1"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/logo2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/userId"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:fontFamily="@font/fontstylekor"
+                android:hint="아이디"
+                android:textColor="#000"
+                android:textColorHint="#c9c9c9"
+                android:textSize="23dp" />
+
+            <EditText
+                android:id="@+id/userpwd"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:fontFamily="@font/fontstylekor"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textColorHint="#c9c9c9"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/joinBtn"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:fontFamily="@font/fontstylekor"
+                android:text="회원가입"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:fontFamily="@font/fontstylekor"
+                android:text="로그인"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_id_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:text="아이디/비밀번호찾기"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.306" />
+
+            <CheckBox
+                android:id="@+id/cb_login"
+                android:layout_width="101dp"
+                android:layout_height="20dp"
+                android:text="자동로그인"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_id_find"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.312" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

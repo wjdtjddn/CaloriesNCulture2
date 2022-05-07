@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a8b4cb"
+    android:orientation="vertical"
+    tools:context=".MainActivity_culture_reviewwrite1">
+
+
+    <TextView
+        android:id="@+id/txt_culture_write1_year"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:gravity="end"
+        android:text="년"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_culture_write1_month"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="end"
+        android:text="월"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline111"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_write1_year"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_culture_write1_day"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="end"
+        android:text="일"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_write1_month"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline115"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <EditText
+        android:id="@+id/txt_culture_review1_title"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="입 력"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline112"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_1"
+        app:layout_constraintTop_toTopOf="@+id/guideline111" />
+
+    <TextView
+        android:id="@+id/txt_culture_review1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/fontstylekor"
+        android:padding="10dp"
+        android:text=" 제 목 : "
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline111" />
+
+    <EditText
+        android:id="@+id/txt_culture_review1_author"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="입 력"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline113"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_2"
+        app:layout_constraintTop_toTopOf="@+id/guideline112" />
+
+    <TextView
+        android:id="@+id/txt_culture_review1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/fontstylekor"
+        android:padding="10dp"
+        android:text="감독 및 배우"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline112"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/txt_culture_review1_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/fontstylekor"
+        android:padding="10dp"
+        android:text=" 장 르 : "
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline113"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txt_culture_review1_genre"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/fontstylekor"
+        android:hint=" 장  르  "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline114"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_3"
+        app:layout_constraintTop_toTopOf="@+id/guideline113"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/btn_culture_review1_genre"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_gravity="right"
+        android:background="#4374D9"
+        android:fontFamily="@font/fontstylekor"
+        android:padding="5dp"
+        android:text="선택"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline114"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_culture_review1_genre"
+        app:layout_constraintTop_toTopOf="@+id/guideline113"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <EditText
+        android:id="@+id/txt_culture_review1_content"
+        android:layout_width="370dp"
+        android:layout_height="273dp"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="내 용"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/guideline115"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline114" />
+
+    <Button
+        android:id="@+id/btn_culture_review1_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        android:layout_weight="1"
+        android:background="#4374D9"
+        android:text="저장"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline115" />
+
+    <ImageView
+        android:id="@+id/img_culture_review1"
+        android:layout_width="137dp"
+        android:layout_height="114dp"
+        android:background="@drawable/logo3"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_culture_review1_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:text="취소"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_culture_review1_save"
+        app:layout_constraintTop_toTopOf="@+id/guideline115"
+        app:layout_constraintVertical_bias="0.219" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

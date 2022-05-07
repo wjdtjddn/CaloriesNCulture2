@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kcal">
+        <item>인분</item>
+        <item>g</item>
+
+    </string-array>
+</resources>
